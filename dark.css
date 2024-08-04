@@ -1,0 +1,11 @@
+h1, h2{
+    color: #fff;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.863);
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  background-color: #fff;
+}

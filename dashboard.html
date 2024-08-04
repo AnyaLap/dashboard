@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./assets/dashboard.css">
+    <link rel="stylesheet" href="./dark.css" media="(prefers-color-scheme: dark)">
+</head>
+<body>
+    <div class="fon"><dark-mode-toggle appearance=""></dark-mode-toggle></div>
+    <header class="header">
+          <div class="burger-menu">
+            <input id="menu__toggle" type="checkbox"/>
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <ul class="menu">
+               <li class="menu__item"><a class="menu-link" href="">О КОМПАНИИ</a></li>
+               <li class="menu__item"><a class="menu-link" href="">ПАРТНЕРЫ</a></li>
+               <li class="menu__item"><a class="menu-link" href="">ОТЗЫВЫ</a></li>
+               <li class="menu__item"><a class="menu-link" href="">НОВОСТИ</a></li>
+            </ul>
+            </div>
+        </div>
+      </header>
+    <h1>Производство высокотехнологичных биоимплантатов</h1>
+    <div class="companies">
+        <div class="box" data-tilt>
+            <div class="box__image element1">
+                <img src="./assets/images/logo.png" alt="АйконЛаб">
+            </div>
+            <div class="box__content">
+                <h2>АйконЛаб</h2>
+                <p> компания-производитель композитных эндопротезов на основе собственных инновационных зарегистрированных материалов Реперен® и Рекост®.</p>
+            </div>
+        </div>
+        <div class="box" data-tilt>
+            <div class="box__image element2">
+                <img src="./assets/images/logo-402.png" alt="Репер-НН">
+            </div>
+            <div class="box__content">
+                <h2>Репер-НН</h2>
+                <p>компания-производитель широкого спектра продукции для офтальмохирургии по собственной уникальной технологии фотополимеризации.</p>
+            </div>
+        </div>
+    </div>
+    <h2>Показатели компаний за год</h2>
+    <div class="block">
+        <div class="chart">
+            <canvas id="myChart1" width="400" height="350"></canvas>
+        </div>
+        <div class="chart">
+            <canvas id="myChart2" width="400" height="350"></canvas>
+        </div>
+        <div class="chart">
+            <canvas id="myChart3" width="400" height="350"></canvas>
+        </div>
+    </div>
+<script src="./assets/dashboard.js"></script>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400
+	});
+</script>
+<script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+</body>
+</html>

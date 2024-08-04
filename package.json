@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "chart.js": "^4.4.3",
+    "dark-mode-toggle": "^0.15.0",
+    "vanilla-tilt": "^1.8.1"
+  }
+}
