@@ -17,7 +17,7 @@ fetchButton.addEventListener('click', () => {
     })
     .then(data => {
         if(id <= 10){
-            resultBlock.textContent = `Имя: ${data.name}`;
+            resultBlock.textContent = `Модель: ${data.model}`;
             errorBlock.textContent = '';
         }
         else{
